@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+	<title>Employee Form</title>
+    <script src="script.js"></script>
+</head>
+<style>
+
+label, h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+input{
+    padding: 5px;
+    margin: 5px 0 23px 0;
+    display: inline-block;
+}
+
+div{
+    padding: 10px 30px;
+}
+
+body{
+    border: 3px solid black;
+}
+
+</style>
+<body>
+    <h1><center>Employee Details Form</center></h1><hr>
+    <form id="myform">
+        <div class="container">
+
+        <label for="name">Name : </label><br>
+        <input type="text" id="name" required><br>
+
+        <label for="age">Age : </label><br>
+        <input type="number" id="age" required><br><br>
+    </div>
+
+<div class="gen">
+        <label for="gender">Gender : </label><br>
+        <input type="radio" id="gender" name="Gender" value="Male" required>
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="Gender" value="Female" required>
+        <label for="gender">Female</label>
+        <input type="radio" id="gender" name="Gender" value="Other" required>
+        <label for="gender">Other</label><br><br>
+    </div>
+
+    <div class="detail">
+        <label for="designation">Designation : </label><br>
+        <input type="text" id="designation" required><br>
+
+        <label for="salary">Salary : </label><br>
+        <input type="number" id="salary" required><br>
+
+        <label for="list-data">Location : </label><br>
+        <input type="text" list="myDataList" required>
+        <datalist id="myDataList">
+            <option label="Ahmedabad" value="Ahmedabad"></option>
+            <option label="Gandhinagar" value="Gandhinagar"></option>
+            <option label="Rajkot" value="Rajkot"></option>
+            <option label="Surendranagar" value="Surendranagar"></option>
+        </datalist><br>
+        
+        <label for="email">Email-id : </label><br>
+        <input type="email" id="email" required><br>
+
+        <label for="contact">Contact No : </label><br>
+        <input type="tel" id="contact" required><br>
+
+        <label for="joindate">Date of Joining : </label><br>
+        <input type="date" id="joindate" required><br>
+
+        <input type="submit" value="SUBMIT">
+        <input type="button" id="save" value="SAVE">
+        <input type="button" id="retireve" value="RETRIEVE">
+        <input type="button" id="delete" value="DELETE">
+        <input type="button" id="clear" value="CLEAR">
+
+
+
+
+
+
+    </div>
+
+    </form>
+</body>
