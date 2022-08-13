@@ -7,3 +7,4 @@ I'm learning how to handle git conflicts !
 Hello everyone
 Today is saturday.
 Tommorrow is sunday.
+Monday is holiday
